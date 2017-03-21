@@ -11,7 +11,9 @@ public:
 	// добавить один элемент в массив
 	bool append(T item)
 	{
-		// напиши инструкции
+		// написать проверку на свободное место (max_count и count)
+		this->items[count] = item;
+		this->count += 1;
 		return true; // если успешно добавили тогда вернёт true // если нет места тогда false
 	}
 	// очистка
