@@ -12,7 +12,7 @@ public:
 	bool append(T item)
 	{
 		// написать проверку на свободное место (max_count и count)
-		this->items[count] = item;
+		this->items[this->count] = item;
 		this->count += 1;
 		return true; // если успешно добавили тогда вернёт true // если нет места тогда false
 	}
