@@ -14,14 +14,19 @@ public:
 		bool result = count < max_count;
 		if( result )
 		{
-			this->items[this->count] = item;
-			this->count += 1;
+			items[count] = item;
+			count += 1;
 		}
 		return result;
 	}
 	// очистка
 	void clear()
 	{
-		// вернуть чтоб как в конструкторе
+		count = 0;
+	}
+	//
+	int lower_by(int n)
+	{
+		
 	}
 };
