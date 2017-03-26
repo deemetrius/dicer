@@ -5,11 +5,15 @@ void show_all(dicer & d)
 {
 	if( d.count )
 	{
-		auto end = d.items + d.count;
+		/* auto end = d.items + d.count;
 		for(auto h= d.items; h != end; ++h)
 		{
 			std::cout << (*h) << " ";
-		}	
+		} */
+		for( auto it : d )
+		{
+			std::cout << it << " ";
+		}
 	} else {
 		std::cout << "empty";
 	}
