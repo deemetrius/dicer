@@ -8,15 +8,20 @@ public:
 	int count;
 	// конструктор
 	dicer() : count(0) {}
-	// добавить один элемент в массив
+	// добавить один элемент в массив, если еть мето
 	bool append(T item)
 	{
-		// написать проверку на свободное место (max_count и count)
-		this->items[this->count] = item;
-		this->count += 1;
-		return true; // если успешно добавили тогда вернёт true // если нет места тогда false
+		bool result = count < max_count;
+		if( result )
+		{
+			this->items[this->count] = item;
+			this->count += 1;
+		}
+		return result;
 	}
 	// очистка
 	void clear()
-	{}
+	{
+		// вернуть чтоб как в конструкторе
+	}
 };
