@@ -29,4 +29,7 @@ public:
 	{
 		
 	}
+	// iteration
+	T * begin() { return items; }
+	T * end() { return items + count; }
 };
